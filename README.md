@@ -1,72 +1,95 @@
-# Angular 16 example project: CRUD with Rest API
+# Spring Boot H2 Database CRUD example: Building Rest API with Spring Data JPA
 
-Build an Angular 16 CRUD example App to consume Rest APIs, display, modify & search data.
+For more detail, please visit:
+> [Spring Boot JPA + H2 example: Build a CRUD Rest APIs](https://www.bezkoder.com/spring-boot-jpa-h2-example/)
 
-Tutorial Application in that:
-- Each Tutorial has id, title, description, published status.
-- We can create, retrieve, update, delete Tutorials.
-- There is a Search bar for finding Tutorials by title.
+In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Maven that use Spring Data JPA to interact with H2 database. You'll know:
 
-![angular-16-crud-example](angular-16-crud-example.png)
+- How to configure Spring Data, JPA, Hibernate to work with Database
+- How to define Data Models and Repository interfaces
+- Way to create Spring Rest Controller to process HTTP requests
+- Way to use Spring Data JPA to interact with H2 Database
 
-Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
+Front-end that works well with this Back-end
+> [Angular 8](https://www.bezkoder.com/angular-crud-app/) / [Angular 10](https://www.bezkoder.com/angular-10-crud-app/) / [Angular 11](https://www.bezkoder.com/angular-11-crud-app/) / [Angular 12](https://www.bezkoder.com/angular-12-crud-app/) / [Angular 13](https://www.bezkoder.com/angular-13-crud-example/) / [Angular 14](https://www.bezkoder.com/angular-14-crud-example/) / [Angular 15](https://www.bezkoder.com/angular-15-crud-example/) / [Angular 16 Client](https://www.bezkoder.com/angular-16-crud-example/)
 
-For instruction, please visit:
-> [Angular 16 CRUD example with Rest API](https://www.bezkoder.com/angular-16-crud-example/)
+> [Vue 2 Client](https://www.bezkoder.com/vue-js-crud-app/) / [Vue 3 Client](https://www.bezkoder.com/vue-3-crud/) / [Vuetify Client](https://www.bezkoder.com/vuetify-data-table-example/)
+
+> [React Client](https://www.bezkoder.com/react-hooks-crud-axios-api/) / [React Redux Client](https://www.bezkoder.com/redux-toolkit-crud-react-hooks/)
 
 More Practice:
-> [Angular 16 Pagination example](https://www.bezkoder.com/angular-16-pagination-ngx/)
+> [Spring Boot Validate Request Body](https://www.bezkoder.com/spring-boot-validate-request-body/)
 
-> [Angular 16 JWT Authentication & Authorization example](https://www.bezkoder.com/angular-16-jwt-auth/)
+> [Spring Boot File upload example with Multipart File](https://www.bezkoder.com/spring-boot-file-upload/)
 
-> [Angular 16 File upload example with Progress bar](https://www.bezkoder.com/angular-16-file-upload/)
+> [Spring Boot Pagination & Filter example | Spring JPA, Pageable](https://www.bezkoder.com/spring-boot-pagination-filter-jpa-pageable/)
 
-> [Angular 16 Form Validation example](https://www.bezkoder.com/angular-16-form-validation/)
+> [Spring Data JPA Sort/Order by multiple Columns | Spring Boot](https://www.bezkoder.com/spring-data-sort-multiple-columns/)
 
-Fullstack with Node:
+> [Spring Boot Repository Unit Test with @DataJpaTest](https://www.bezkoder.com/spring-boot-unit-test-jpa-repo-datajpatest/)
 
-> [Angular 16 + Node Express + MySQL example](https://www.bezkoder.com/angular-16-node-js-express-mysql/)
+> [Spring Boot Rest Controller Unit Test with @WebMvcTest](https://www.bezkoder.com/spring-boot-webmvctest/)
 
-> [Angular 16 + Node Express + PostgreSQL example](https://www.bezkoder.com/angular-16-node-js-express-postgresql/)
+> Cache the result: [Spring Boot Redis Cache example](https://www.bezkoder.com/spring-boot-redis-cache-example/)
 
-> [Angular 16 + Node Express + MongoDB example](https://www.bezkoder.com/angular-16-node-js-express-mongodb/)
+> Documentation: [Spring Boot with Swagger 3 example](https://www.bezkoder.com/spring-boot-swagger-3/)
 
-> [Angular 16 + Node Express: File upload example](https://www.bezkoder.com/angular-16-node-express-file-upload/)
+> Reactive Rest API: [Spring Boot WebFlux example](https://www.bezkoder.com/spring-boot-webflux-rest-api/)
 
-Fullstack with Spring Boot:
+> [Deploy Spring Boot App on AWS – Elastic Beanstalk](https://www.bezkoder.com/deploy-spring-boot-aws-eb/)
+
+Exception Handling:
+> [Spring Boot @ControllerAdvice & @ExceptionHandler example](https://www.bezkoder.com/spring-boot-controlleradvice-exceptionhandler/)
+
+> [@RestControllerAdvice example in Spring Boot](https://www.bezkoder.com/spring-boot-restcontrolleradvice/)
+
+Associations:
+> [Spring Boot One To One example with Spring JPA, Hibernate](https://www.bezkoder.com/jpa-one-to-one/)
+
+> [Spring Boot One To Many example with Spring JPA, Hibernate](https://www.bezkoder.com/jpa-one-to-many/)
+
+> [Spring Boot Many To Many example with Spring JPA, Hibernate](https://www.bezkoder.com/jpa-many-to-many/)
+
+Other databases:
+> [Spring Boot JPA + MySQL: CRUD Rest API example](https://www.bezkoder.com/spring-boot-jpa-crud-rest-api/)
+
+> [Spring Boot JPA + PostgreSQL: CRUD Rest API example](https://www.bezkoder.com/spring-boot-postgresql-example/)
+
+Security:
+> [Spring Boot + Spring Security JWT Authentication & Authorization](https://www.bezkoder.com/spring-boot-jwt-authentication/)
+
+Fullstack:
+> [Vue + Spring Boot example](https://www.bezkoder.com/spring-boot-vue-js-crud-example/)
+
+> [Angular 8 + Spring Boot example](https://www.bezkoder.com/angular-spring-boot-crud/)
+
+> [Angular 10 + Spring Boot example](https://www.bezkoder.com/angular-10-spring-boot-crud/)
+
+> [Angular 11 + Spring Boot example](https://www.bezkoder.com/angular-11-spring-boot-crud/)
+
+> [Angular 12 + Spring Boot example](https://www.bezkoder.com/angular-12-spring-boot-crud/)
+
+> [Angular 13 + Spring Boot example](https://www.bezkoder.com/spring-boot-angular-13-crud/)
+
+> [Angular 14 + Spring Boot example](https://www.bezkoder.com/spring-boot-angular-14-crud/)
+
+> [Angular 15 + Spring Boot example](https://www.bezkoder.com/spring-boot-angular-15-crud/)
 
 > [Angular 16 + Spring Boot example](https://www.bezkoder.com/spring-boot-angular-16-crud/)
 
-> [Angular 16 + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-16-mysql/)
+> [React + Spring Boot + MySQL example](https://www.bezkoder.com/react-spring-boot-crud/)
 
-> [Angular 16 + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-16-postgresql/)
+> [React + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-react-postgresql/)
 
-> [Angular 16 + Spring Boot + MongoDB example](https://www.bezkoder.com/spring-boot-angular-16-mongodb/)
+Run both Back-end & Front-end in one place:
+> [Integrate Angular with Spring Boot Rest API](https://www.bezkoder.com/integrate-angular-spring-boot/)
 
-> [Angular 16 + Spring Boot: File upload example](https://www.bezkoder.com/angular-16-spring-boot-file-upload/)
+> [Integrate React.js with Spring Boot Rest API](https://www.bezkoder.com/integrate-reactjs-spring-boot/)
 
-Fullstack with Django:
-> [Angular + Django example](https://www.bezkoder.com/django-angular-13-crud-rest-framework/)
+> [Integrate Vue.js with Spring Boot Rest API](https://www.bezkoder.com/integrate-vue-spring-boot/)
 
-> [Angular + Django + MySQL](https://www.bezkoder.com/django-angular-mysql/)
+## Run Spring Boot application
+```
+mvn spring-boot:run
+```
 
-> [Angular + Django + PostgreSQL](https://www.bezkoder.com/django-angular-postgresql/)
-
-> [Angular + Django + MongoDB](https://www.bezkoder.com/django-angular-mongodb/)
-
-Security:
-> [Angular 16 + Spring Boot: JWT Authentication and Authorization example](https://www.bezkoder.com/angular-16-spring-boot-jwt-auth/)
-
-> [Angular 16 + Node.js Express: JWT Authentication and Authorization example](https://www.bezkoder.com/node-js-angular-16-jwt-auth/)
-
-Serverless with Firebase:
-> [Angular 16 Firebase CRUD with Realtime DataBase](https://www.bezkoder.com/angular-16-firebase-crud/)
-
-> [Angular 16 Firestore CRUD example](https://www.bezkoder.com/angular-16-firestore-crud/)
-
-> [Angular 16 Firebase Storage: File Upload/Display/Delete example](https://www.bezkoder.com/angular-16-firebase-storage/)
-
-Integration (run back-end & front-end on same server/port)
-> [How to integrate Angular with Node Restful Services](https://bezkoder.com/integrate-angular-12-node-js/)
-
-> [How to Integrate Angular with Spring Boot Rest API](https://bezkoder.com/integrate-angular-12-spring-boot/)
